@@ -9,11 +9,9 @@ class PlaySpeedAudjuster(GObject.Object, Peas.Activatable):
 
 	rate_list = [['0.5x', 0.5], ['0.75x', 0.75], ['1x', 1], ['1.25x', 1.25], ['1.5x', 1.5], ['1.75x', 1.75], ['2x', 2]]
 
-
 	is_podcast = False
 	has_duration = False
 	connected_audio_bin = False
-	has_created_display = False
 
 	previous_elapsed = 0
 	rate = 1.75
